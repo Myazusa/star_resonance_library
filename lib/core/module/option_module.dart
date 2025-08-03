@@ -1,9 +1,10 @@
 import 'dart:math';
 
 import 'package:flutter_riverpod/flutter_riverpod.dart';
+import 'package:star_resonance_toolkit/core/util/win32_util.dart';
+import 'package:star_resonance_toolkit/ui/state/game_screen_state.dart';
 
-import '../../ui/state/game_screen_state.dart';
-import '../util/win32_util.dart';
+
 
 /// 懒加载单例
 class OptionModule {

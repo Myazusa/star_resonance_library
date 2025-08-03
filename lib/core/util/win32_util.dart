@@ -2,9 +2,10 @@ import 'dart:ffi';
 import 'dart:math';
 
 import 'package:ffi/ffi.dart';
+import 'package:star_resonance_toolkit/core/model/window_info.dart';
 import 'package:win32/win32.dart';
 
-import '../model/WindowInfo.dart';
+
 
 class Win32Util{
   static WindowInfo? getClientAreaRectByTitle(String windowTitle) {

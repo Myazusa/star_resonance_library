@@ -3,9 +3,9 @@ import 'dart:developer';
 import 'package:star_resonance_toolkit/core/module/common/screen_capture_module.dart';
 import 'package:star_resonance_toolkit/core/module/option_module.dart';
 import 'package:star_resonance_toolkit/core/system/event/capture_event.dart';
+import 'package:star_resonance_toolkit/core/system/event/tick_event.dart';
+import 'package:star_resonance_toolkit/core/system/event_bus.dart';
 
-import '../event/tick_event.dart';
-import '../event_bus.dart';
 
 class TickerHandler{
   static bool _isCaptureProcessing = false;

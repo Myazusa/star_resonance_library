@@ -1,11 +1,9 @@
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
-
-import '../component/item.dart';
-import '../component/bottom_tips.dart';
-import '../state/auto_fishing_state.dart';
-
+import 'package:star_resonance_toolkit/ui/component/bottom_tips.dart';
+import 'package:star_resonance_toolkit/ui/state/auto_fishing_state.dart';
+import 'package:star_resonance_toolkit/ui/component/item.dart';
 
 class FishingPage extends ConsumerWidget {
   const FishingPage({super.key});

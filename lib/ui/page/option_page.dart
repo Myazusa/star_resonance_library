@@ -2,10 +2,10 @@ import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:star_resonance_toolkit/ui/component/hover_tips.dart';
 
-import '../../core/module/option_module.dart';
-import '../component/item.dart';
-import '../component/bottom_tips.dart';
-import '../state/game_screen_state.dart';
+import 'package:star_resonance_toolkit/core/module/option_module.dart';
+import 'package:star_resonance_toolkit/ui/component/item.dart';
+import 'package:star_resonance_toolkit/ui/component/bottom_tips.dart';
+import 'package:star_resonance_toolkit/ui/state/game_screen_state.dart';
 
 class OptionPage extends ConsumerWidget{
   const OptionPage({super.key});
