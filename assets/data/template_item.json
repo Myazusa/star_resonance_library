@@ -1,0 +1,22 @@
+{
+  "itemID": "",
+  "itemName": "",
+  "itemIconPath": "assets/images/item/",
+  "itemLevel": 0,
+  "isNoFocusConsumeItem": false,
+  "perItemAssociationFreightValue": 0,
+  "rawMaterial": {
+    "focusValue": 0,
+    "perItemCollectingMinValue": 0,
+    "perItemCollectingMaxValue": 0
+  },
+  "crafting": {
+    "focusValue": 0,
+    "craftingTable": {
+      "item" : 0
+    },
+    "resultProbability": 0,
+    "resultMinValue": 0,
+    "resultMaxValue": 0
+  }
+}
