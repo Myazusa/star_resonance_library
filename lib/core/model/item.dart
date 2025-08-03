@@ -7,13 +7,24 @@ part 'item.g.dart';
 @JsonSerializable()
 class Item{
   String itemID;
+
+  @JsonKey(defaultValue: '未知物品')
   String itemName;
+
+  @JsonKey(defaultValue: '')
   String itemIconPath;
+
+  @JsonKey(defaultValue: 0)
   int itemLevel;
+
+  @JsonKey(defaultValue: false)
   bool isNoFocusConsumeItem;
+
+  @JsonKey(defaultValue: 0)
   int perItemAssociationFreightValue;
-  RawMaterial rawMaterial;
-  Crafting crafting;
+
+  RawMaterial? rawMaterial;
+  Crafting? crafting;
 
   Item(this.itemID, this.itemName, this.itemIconPath, this.itemLevel,
       this.isNoFocusConsumeItem, this.perItemAssociationFreightValue,

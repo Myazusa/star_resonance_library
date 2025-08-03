@@ -8,13 +8,17 @@ part of 'item.dart';
 
 Item _$ItemFromJson(Map<String, dynamic> json) => Item(
   json['itemID'] as String,
-  json['itemName'] as String,
-  json['itemIconPath'] as String,
-  (json['itemLevel'] as num).toInt(),
-  json['isNoFocusConsumeItem'] as bool,
-  (json['perItemAssociationFreightValue'] as num).toInt(),
-  RawMaterial.fromJson(json['rawMaterial'] as Map<String, dynamic>),
-  Crafting.fromJson(json['crafting'] as Map<String, dynamic>),
+  json['itemName'] as String? ?? '未知物品',
+  json['itemIconPath'] as String? ?? '',
+  (json['itemLevel'] as num?)?.toInt() ?? 0,
+  json['isNoFocusConsumeItem'] as bool? ?? false,
+  (json['perItemAssociationFreightValue'] as num?)?.toInt() ?? 0,
+  json['rawMaterial'] == null
+      ? null
+      : RawMaterial.fromJson(json['rawMaterial'] as Map<String, dynamic>),
+  json['crafting'] == null
+      ? null
+      : Crafting.fromJson(json['crafting'] as Map<String, dynamic>),
 );
 
 Map<String, dynamic> _$ItemToJson(Item instance) => <String, dynamic>{
