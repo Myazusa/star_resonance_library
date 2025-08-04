@@ -10,7 +10,7 @@ import 'package:star_resonance_toolkit/core/util/assets_util.dart';
 class ItemDataModule{
   static ItemDataModule? _instance;
   List<Item> items = [];
-  List<ItemEntity> itemEntities = [];
+  Map<String,ItemEntity> itemEntities = {};
 
   factory ItemDataModule() {
     return _instance ??= ItemDataModule._internal();
@@ -63,12 +63,12 @@ class ItemDataModule{
       }
       
       ItemEntity itemEntity = ItemEntity(itemIcon!, itemTags, item, item.rawMaterial, item.crafting);
-      itemEntities.add(itemEntity);
+      itemEntities.putIfAbsent(item.itemID, () => itemEntity);
     }
   }
 
   void destItemData(){
     items = [];
-    itemEntities = [];
+    itemEntities = {};
   }
 }
