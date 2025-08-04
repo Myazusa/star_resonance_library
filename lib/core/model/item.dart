@@ -1,4 +1,5 @@
 import 'package:json_annotation/json_annotation.dart';
+import 'package:star_resonance_toolkit/core/enum/item_category.dart';
 import 'package:star_resonance_toolkit/core/model/crafting.dart';
 import 'package:star_resonance_toolkit/core/model/raw_material.dart';
 
@@ -10,6 +11,9 @@ class Item{
 
   @JsonKey(defaultValue: '未知物品')
   String itemName;
+
+  @JsonKey(defaultValue: ItemCategory.none)
+  ItemCategory itemCategory;
 
   @JsonKey(defaultValue: '')
   String itemIconPath;
@@ -26,9 +30,10 @@ class Item{
   RawMaterial? rawMaterial;
   Crafting? crafting;
 
-  Item(this.itemID, this.itemName, this.itemIconPath, this.itemLevel,
-      this.isNoFocusConsumeItem, this.perItemAssociationFreightValue,
-      this.rawMaterial, this.crafting);
+
+  Item(this.itemID, this.itemName, this.itemCategory, this.itemIconPath,
+      this.itemLevel, this.isNoFocusConsumeItem,
+      this.perItemAssociationFreightValue, this.rawMaterial, this.crafting);
 
   factory Item.fromJson(Map<String, dynamic> json) => _$ItemFromJson(json);
   Map<String, dynamic> toJson() => _$ItemToJson(this);

@@ -1,3 +1,4 @@
+import 'package:star_resonance_toolkit/core/module/common/item_data_module.dart';
 import 'package:star_resonance_toolkit/core/module/common/opencv_module.dart';
 import 'package:star_resonance_toolkit/core/system/event_bus.dart';
 import 'package:star_resonance_toolkit/core/system/handler/opencv_handler.dart';
@@ -19,6 +20,9 @@ class Init{
   static void initGreyQueryMatMap(){
     OpencvModule.initGreyQueryMatMap();
   }
+  static void initItemData(){
+    ItemDataModule.instance.initItemData();
+  }
 }
 
 class Dest{
@@ -32,5 +36,8 @@ class Dest{
 
   static void destGreyQueryMatMap(){
     OpencvModule.destGreyQueryMatMap();
+  }
+  static void destItemData(){
+    ItemDataModule.instance.destItemData();
   }
 }

@@ -2,6 +2,7 @@
     {
         "itemID": "item_lunakuangshi",
         "itemName": "卢纳矿石",
+        "itemCategory": "mineralogy",
         "itemIconPath": "assets/images/item/item_lunakuangshi.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -16,6 +17,7 @@
     {
         "itemID": "item_lunafukuangshi",
         "itemName": "卢纳富矿石",
+        "itemCategory": "mineralogy",
         "itemIconPath": "assets/images/item/item_lunafukuangshi.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -30,6 +32,7 @@
     {
         "itemID": "item_xuehuaqin",
         "itemName": "雪花芹",
+        "itemCategory": "botany",
         "itemIconPath": "assets/images/item/item_xuehuaqin.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -44,6 +47,7 @@
     {
         "itemID": "item_bingyuansukeli_1",
         "itemName": "冰元素颗粒·等级1",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_bingyuansukeli_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -62,6 +66,7 @@
     {
         "itemID": "item_huiyuansukeli_1",
         "itemName": "火元素颗粒·等级1",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_huiyuansukeli_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -80,6 +85,7 @@
     {
         "itemID": "item_tantanrou_2",
         "itemName": "坛坛肉·等级2",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_tantanrou_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -99,6 +105,7 @@
     {
         "itemID": "item_tantanrou_1",
         "itemName": "坛坛肉·等级1",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_tantanrou_1.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -118,6 +125,7 @@
     {
         "itemID": "item_guohuazhengwanzi_2",
         "itemName": "裹花蒸丸子·等级2",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_guohuazhengwanzi_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -138,6 +146,7 @@
     {
         "itemID": "item_xiangxunyu_2",
         "itemName": "香薰鱼·等级2",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_xiangxunyu_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -159,6 +168,7 @@
     {
         "itemID": "item_rouxianzhengpanggugu_1",
         "itemName": "肉馅蒸胖菇菇·等级1",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_rouxianzhengpanggugu_1.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -179,6 +189,7 @@
     {
         "itemID": "item_xingcuichijingyuanshi_1",
         "itemName": "星萃赤晶原石·等级1",
+        "itemCategory": "technology",
         "itemIconPath": "assets/images/item/item_xingcuichijingyuanshi_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -193,6 +204,7 @@
     {
         "itemID": "item_xingcuicuijingyuanshi_1",
         "itemName": "星萃翠晶原石·等级1",
+        "itemCategory": "technology",
         "itemIconPath": "assets/images/item/item_xingcuicuijingyuanshi_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -207,6 +219,7 @@
     {
         "itemID": "item_xingcuilanjingyuanshi_1",
         "itemName": "星萃蓝晶原石·等级1",
+        "itemCategory": "technology",
         "itemIconPath": "assets/images/item/item_xingcuilanjingyuanshi_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -221,6 +234,7 @@
     {
         "itemID": "item_xingcuiyaojingyuanshi_1",
         "itemName": "星萃耀晶原石·等级1",
+        "itemCategory": "technology",
         "itemIconPath": "assets/images/item/item_xingcuiyaojingyuanshi_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -235,6 +249,7 @@
     {
         "itemID": "item_xingcuichijingyuanshi_2",
         "itemName": "星萃赤晶原石·等级2",
+        "itemCategory": "technology",
         "itemIconPath": "assets/images/item/item_xingcuichijingyuanshi_2.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -249,6 +264,7 @@
     {
         "itemID": "item_xingcuicuijingyuanshi_2",
         "itemName": "星萃翠晶原石·等级2",
+        "itemCategory": "technology",
         "itemIconPath": "assets/images/item/item_xingcuicuijingyuanshi_2.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -263,6 +279,7 @@
     {
         "itemID": "item_xingcuilanjingyuanshi_2",
         "itemName": "星萃蓝晶原石·等级2",
+        "itemCategory": "technology",
         "itemIconPath": "assets/images/item/item_xingcuilanjingyuanshi_2.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -277,6 +294,7 @@
     {
         "itemID": "item_xingcuiyaojingyuanshi_2",
         "itemName": "星萃耀晶原石·等级2",
+        "itemCategory": "technology",
         "itemIconPath": "assets/images/item/item_xingcuiyaojingyuanshi_2.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -291,6 +309,7 @@
     {
         "itemID": "item_fenshexiang",
         "itemName": "粉麝香",
+        "itemCategory": "botany",
         "itemIconPath": "assets/images/item/item_fenshexiang.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -305,6 +324,7 @@
     {
         "itemID": "item_yingguangxun",
         "itemName": "萤光蕈",
+        "itemCategory": "botany",
         "itemIconPath": "assets/images/item/item_yingguangxun.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -319,6 +339,7 @@
     {
         "itemID": "item_situokesifukuangshi",
         "itemName": "斯托克斯富矿石",
+        "itemCategory": "mineralogy",
         "itemIconPath": "assets/images/item/item_situokesifukuangshi.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -333,6 +354,7 @@
     {
         "itemID": "item_xianrou",
         "itemName": "鲜肉",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_xianrou.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -351,6 +373,7 @@
     {
         "itemID": "item_guangyuansukeli_2",
         "itemName": "光元素颗粒·等级2",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_guangyuansukeli_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -369,6 +392,7 @@
     {
         "itemID": "item_kanghuohanpian_2",
         "itemName": "抗火含片·等级2",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_kanghuohanpian_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -388,6 +412,7 @@
     {
         "itemID": "item_kangbinghanpian_2",
         "itemName": "抗冰含片·等级2",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_kangbinghanpian_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -407,6 +432,7 @@
     {
         "itemID": "item_kangguanghanpian_2",
         "itemName": "抗光含片·等级2",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_kangguanghanpian_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -426,6 +452,7 @@
     {
         "itemID": "item_kangsenhanpian_1",
         "itemName": "抗森含片·等级1",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_kangsenhanpian_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -445,6 +472,7 @@
     {
         "itemID": "item_bingdongtangjiang_2",
         "itemName": "冰冻糖浆·等级2",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_bingdongtangjiang_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -464,6 +492,7 @@
     {
         "itemID": "item_leimingtangjiang_1",
         "itemName": "雷鸣糖浆·等级1",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_leimingtangjiang_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -483,6 +512,7 @@
     {
         "itemID": "item_anyetangjiang_1",
         "itemName": "暗夜糖浆·等级1",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_anyetangjiang_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -502,6 +532,7 @@
     {
         "itemID": "item_anyetangjiang_2",
         "itemName": "暗夜糖浆·等级2",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_anyetangjiang_2.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -521,6 +552,7 @@
     {
         "itemID": "item_huoyanbanyu",
         "itemName": "火焰斑鱼",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_huoyanbanyu.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -531,6 +563,7 @@
     {
         "itemID": "item_migutang_1",
         "itemName": "蜜菇汤·等级1",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_migutang_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -551,6 +584,7 @@
     {
         "itemID": "item_tanglumeiguo_2",
         "itemName": "糖露莓果·等级2",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_tanglumeiguo_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -570,6 +604,7 @@
     {
         "itemID": "item_yuxianrongyan_1",
         "itemName": "鱼鲜熔岩·等级1",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_yuxianrongyan_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -591,6 +626,7 @@
     {
         "itemID": "item_gulujiang_2",
         "itemName": "菇噜酱·等级2",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_gulujiang_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -611,6 +647,7 @@
     {
         "itemID": "item_balukuangshi",
         "itemName": "巴鲁矿石",
+        "itemCategory": "mineralogy",
         "itemIconPath": "assets/images/item/item_balukuangshi.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -625,6 +662,7 @@
     {
         "itemID": "item_balufukuangshi",
         "itemName": "巴鲁富矿石",
+        "itemCategory": "mineralogy",
         "itemIconPath": "assets/images/item/item_balufukuangshi.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -639,6 +677,7 @@
     {
         "itemID": "item_azitekuangshi",
         "itemName": "阿兹特矿石",
+        "itemCategory": "mineralogy",
         "itemIconPath": "assets/images/item/item_azitekuangshi.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -653,6 +692,7 @@
     {
         "itemID": "item_azitefukuangshi",
         "itemName": "阿兹特富矿石",
+        "itemCategory": "mineralogy",
         "itemIconPath": "assets/images/item/item_azitefukuangshi.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -667,6 +707,7 @@
     {
         "itemID": "item_caodixiaosan",
         "itemName": "草地小伞",
+        "itemCategory": "botany",
         "itemIconPath": "assets/images/item/item_caodixiaosan.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -681,6 +722,7 @@
     {
         "itemID": "item_tiantianjiangguo",
         "itemName": "甜甜浆果",
+        "itemCategory": "botany",
         "itemIconPath": "assets/images/item/item_tiantianjiangguo.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -695,6 +737,7 @@
     {
         "itemID": "item_wumuguo",
         "itemName": "乌姆果",
+        "itemCategory": "botany",
         "itemIconPath": "assets/images/item/item_wumuguo.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -709,6 +752,7 @@
     {
         "itemID": "item_shiyan",
         "itemName": "食盐",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_shiyan.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -719,6 +763,7 @@
     {
         "itemID": "item_fengmi",
         "itemName": "蜂蜜",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_fengmi.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -729,6 +774,7 @@
     {
         "itemID": "item_huangyou",
         "itemName": "黄油",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_huangyou.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -739,6 +785,7 @@
     {
         "itemID": "item_jiuweifen",
         "itemName": "九味粉",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_jiuweifen.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -749,6 +796,7 @@
     {
         "itemID": "item_mianfen",
         "itemName": "面粉",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_mianfen.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -759,6 +807,7 @@
     {
         "itemID": "item_weijiagongderou",
         "itemName": "未加工的肉",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_weijiagongderou.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -769,6 +818,7 @@
     {
         "itemID": "item_yurou",
         "itemName": "鱼肉",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_yurou.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
@@ -787,6 +837,7 @@
     {
         "itemID": "item_weijiagongdeyurou",
         "itemName": "未加工的鱼肉",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_weijiagongdeyurou.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -797,6 +848,7 @@
     {
         "itemID": "item_yaojicuiquchumei_zengqiang",
         "itemName": "药剂萃取触媒·增强",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_yaojicuiquchumei_zengqiang.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -807,6 +859,7 @@
     {
         "itemID": "item_yaojicuiquchumei_kangxing",
         "itemName": "药剂萃取触媒·抗性",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_yaojicuiquchumei_kangxing.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -817,6 +870,7 @@
     {
         "itemID": "item_yaojicuiquchumei_huifu",
         "itemName": "药剂萃取触媒·恢复",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_yaojicuiquchumei_huifu.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -827,6 +881,7 @@
     {
         "itemID": "item_pusuasiteguo_1",
         "itemName": "朴素阿斯特锅·等级1",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_pusuasiteguo_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -847,6 +902,7 @@
     {
         "itemID": "item_jingzhixianrou",
         "itemName": "精制鲜肉",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_jingzhixianrou.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -865,6 +921,7 @@
     {
         "itemID": "item_weijiagongdedakuairou",
         "itemName": "未加工的大块肉",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_weijiagongdedakuairou.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -875,6 +932,7 @@
     {
         "itemID": "item_jingzhiyurou",
         "itemName": "精制鱼肉",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_jingzhiyurou.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -893,6 +951,7 @@
     {
         "itemID": "item_senyuansukeli_2",
         "itemName": "森元素颗粒·等级2",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_senyuansukeli_2.png",
         "itemLevel": 2,
         "isNoFocusConsumeItem": false,
@@ -911,6 +970,7 @@
     {
         "itemID": "item_leiyuansukeli_1",
         "itemName": "雷元素颗粒·等级1",
+        "itemCategory": "alchemy",
         "itemIconPath": "assets/images/item/item_leiyuansukeli_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -929,6 +989,7 @@
     {
         "itemID": "item_tanhuoyupai_1",
         "itemName": "炭火鱼排·等级1",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_tanhuoyupai_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -948,6 +1009,7 @@
     {
         "itemID": "item_xingchenzilinyu",
         "itemName": "星辰紫鳞鱼",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_xingchenzilinyu.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -958,6 +1020,7 @@
     {
         "itemID": "item_xiangxunrudong_1",
         "itemName": "香蕈乳冻·等级1",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_xiangxunrudong_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
@@ -978,6 +1041,7 @@
     {
         "itemID": "item_asitechiyu",
         "itemName": "阿斯特池鱼",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_asitechiyu.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -988,6 +1052,7 @@
     {
         "itemID": "item_hanikangyongyu",
         "itemName": "哈尼康鳙鱼",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_hanikangyongyu.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
@@ -998,6 +1063,7 @@
     {
         "itemID": "item_guanguanyu_1",
         "itemName": "罐罐鱼·等级1",
+        "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_guanguanyu_1.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,

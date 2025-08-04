@@ -1,9 +1,7 @@
 import 'dart:convert';
 import 'dart:developer';
-import 'dart:typed_data';
 
 import 'package:flutter/services.dart';
-import 'package:star_resonance_toolkit/core/enum/item_category.dart';
 import 'package:star_resonance_toolkit/core/enum/item_tag.dart';
 import 'package:star_resonance_toolkit/core/model/item.dart';
 import 'package:star_resonance_toolkit/core/model/item_entity.dart';
@@ -14,7 +12,7 @@ class ItemDataModule{
   List<Item> items = [];
   List<ItemEntity> itemEntities = [];
 
-  factory ItemDataModule({bool isEnable = false}) {
+  factory ItemDataModule() {
     return _instance ??= ItemDataModule._internal();
   }
   static ItemDataModule get instance {
@@ -22,11 +20,17 @@ class ItemDataModule{
   }
   ItemDataModule._internal();
 
+  Future<void> initItemData() async{
+    await readItemDataFromJson();
+    await constructItemEntityData();
+  }
+
   Future<void> readItemDataFromJson() async{
     final jsonString = await rootBundle.loadString('assets/data/items.json');
     final List<dynamic> jsonList = jsonDecode(jsonString);
     items = jsonList.map((e) => Item.fromJson(e)).toList();
   }
+
   Future<void> constructItemEntityData() async{
     final ByteData? noIcon = await AssetsUtil.loadImage('assets/images/item/item_none.png');
     assert(noIcon != null,"默认Item资源图片为空");
@@ -41,16 +45,30 @@ class ItemDataModule{
       }
       itemIcon ??= noIcon;
 
-      // todo: 物品model里里少个物品类别，矿物学植物学这种的
-      List<ItemCategory> itemCategories = [];
       List<ItemTag> itemTags = [];
       if(item.crafting == null){
-        //itemTags
+        itemTags.add(ItemTag.nonSynthetic);
+
       }
-
-
-      ItemEntity itemEntity = ItemEntity(itemIcon!, itemCategories, itemTags, item, item.rawMaterial, item.crafting);
+      if(item.crafting != null){
+        itemTags.add(ItemTag.synthesizable);
+        itemTags.add(ItemTag.syntheticChain);
+      }
+      if(item.rawMaterial != null){
+        itemTags.add(ItemTag.gatherings);
+        itemTags.add(ItemTag.participateSynthesis);
+      }
+      if(item.isNoFocusConsumeItem){
+        itemTags.add(ItemTag.noConsumeFocus);
+      }
+      
+      ItemEntity itemEntity = ItemEntity(itemIcon!, itemTags, item, item.rawMaterial, item.crafting);
       itemEntities.add(itemEntity);
     }
+  }
+
+  void destItemData(){
+    items = [];
+    itemEntities = [];
   }
 }
