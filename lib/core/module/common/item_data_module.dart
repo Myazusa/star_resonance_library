@@ -21,17 +21,17 @@ class ItemDataModule{
   ItemDataModule._internal();
 
   Future<void> initItemData() async{
-    await readItemDataFromJson();
-    await constructItemEntityData();
+    await _readItemDataFromJson();
+    await _constructItemEntityData();
   }
 
-  Future<void> readItemDataFromJson() async{
+  Future<void> _readItemDataFromJson() async{
     final jsonString = await rootBundle.loadString('assets/data/items.json');
     final List<dynamic> jsonList = jsonDecode(jsonString);
     items = jsonList.map((e) => Item.fromJson(e)).toList();
   }
 
-  Future<void> constructItemEntityData() async{
+  Future<void> _constructItemEntityData() async{
     final ByteData? noIcon = await AssetsUtil.loadImage('assets/images/item/item_none.png');
     assert(noIcon != null,"默认Item资源图片为空");
 

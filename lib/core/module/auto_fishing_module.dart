@@ -12,6 +12,7 @@ class AutoFishingModule {
 
   double stepWaitTime = 2.0;
 
+  // 因为这个isEnable是状态量，所以必须要传入或者给默认
   factory AutoFishingModule({bool isEnable = false}) {
     return _instance ??= AutoFishingModule._internal(false);
   }
