@@ -1,6 +1,7 @@
 {
   "itemID": "",
   "itemName": "",
+  "itemCategory": "",
   "itemIconPath": "assets/images/item/",
   "itemLevel": 0,
   "isNoFocusConsumeItem": false,
@@ -13,7 +14,7 @@
   "crafting": {
     "focusValue": 0,
     "craftingTable": {
-      "item" : 0
+      "itemID" : 0
     },
     "resultProbability": 0,
     "resultMinValue": 0,

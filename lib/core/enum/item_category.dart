@@ -10,5 +10,6 @@ enum ItemCategory{
   alchemy, // 炼金学
   carpentry, // 木作学
   forging,  // 锻造学
-  cottonocracy  // 纺织学
+  cottonocracy,  // 纺织学
+  crystallography // 晶石学
 }
