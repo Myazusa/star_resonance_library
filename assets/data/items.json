@@ -527,6 +527,26 @@
         }
     },
     {
+        "itemID": "item_kangleihanpian_1",
+        "itemName": "抗雷含片·等级1",
+        "itemCategory": "alchemy",
+        "itemIconPath": "assets/images/item/item_kangleihanpian_1.png",
+        "itemLevel": 1,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 1600,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_leiyuansukeli_1" : 1,
+                "item_yaojicuiquchumei_kangxing": 1
+            },
+            "resultProbability": 0.5,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_kangleihanpian_2",
         "itemName": "抗雷含片·等级2",
         "itemCategory": "alchemy",
@@ -739,6 +759,26 @@
             "focusValue": 25,
             "craftingTable": {
                 "item_leiyuansukeli_1" : 1,
+                "item_yaojicuiquchumei_zengqiang": 1
+            },
+            "resultProbability": 0.5,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_guangcaitangjiang_1",
+        "itemName": "光彩糖浆·等级1",
+        "itemCategory": "alchemy",
+        "itemIconPath": "assets/images/item/item_guangcaitangjiang_1.png",
+        "itemLevel": 1,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 1600,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_guangyuansukeli_1" : 1,
                 "item_yaojicuiquchumei_zengqiang": 1
             },
             "resultProbability": 0.5,
@@ -1464,6 +1504,27 @@
         }
     },
     {
+        "itemID": "item_xiangxunrudong_2",
+        "itemName": "香蕈乳冻·等级2",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_xiangxunrudong_2.png",
+        "itemLevel": 2,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 2200,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_caodixiaosan" : 2,
+                "item_huangyou": 1,
+                "item_fengmi": 1
+            },
+            "resultProbability": 0.5,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_asitechiyu",
         "itemName": "阿斯特池鱼",
         "itemCategory": "gastronomy",
@@ -1517,6 +1578,27 @@
         }
     },
     {
+        "itemID": "item_jiuweiyanrou_1",
+        "itemName": "九味腌肉·等级1",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_jiuweiyanrou_1.png",
+        "itemLevel": 1,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 2200,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_jingzhixianrou" : 4,
+                "item_huangyou": 2,
+                "item_jiuweifen": 2
+            },
+            "resultProbability": 0.8,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_guanguanyu_2",
         "itemName": "罐罐鱼·等级2",
         "itemCategory": "gastronomy",
@@ -1537,6 +1619,26 @@
         }
     },
     {
+        "itemID": "item_yuyuxianguocha_2",
+        "itemName": "郁郁鲜果茶·等级2",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_yuyuxianguocha_2.png",
+        "itemLevel": 2,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 2200,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_tiantianjiangguo" : 2,
+                "item_qingyingbishui": 1
+            },
+            "resultProbability": 0.5,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_cuijingbaoshi",
         "itemName": "翠晶宝石",
         "itemCategory": "technology",
@@ -1549,6 +1651,25 @@
             "focusValue": 20,
             "craftingTable": {
                 "item_xingcuicuijingyuanshi" : 7
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_yaojingbaoshi",
+        "itemName": "耀晶宝石",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_yaojingbaoshi.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 2500,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuiyaojingyuanshi" : 7
             },
             "resultProbability": 1.0,
             "resultMinValue": 1,
