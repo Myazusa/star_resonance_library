@@ -1,9 +1,9 @@
-import 'package:star_resonance_toolkit/core/module/common/item_data_module.dart';
-import 'package:star_resonance_toolkit/core/module/common/opencv_module.dart';
-import 'package:star_resonance_toolkit/core/system/event_bus.dart';
-import 'package:star_resonance_toolkit/core/system/handler/opencv_handler.dart';
-import 'package:star_resonance_toolkit/core/system/handler/simulation_handler.dart';
-import 'package:star_resonance_toolkit/core/system/ticker.dart';
+import 'package:star_resonance_library/core/module/common/item_data_module.dart';
+import 'package:star_resonance_library/core/module/common/opencv_module.dart';
+import 'package:star_resonance_library/core/system/event_bus.dart';
+import 'package:star_resonance_library/core/system/handler/opencv_handler.dart';
+import 'package:star_resonance_library/core/system/handler/simulation_handler.dart';
+import 'package:star_resonance_library/core/system/ticker.dart';
 
 class Init{
   static void initTicker(){

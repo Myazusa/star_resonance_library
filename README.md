@@ -1,16 +1,13 @@
-# star_resonance_toolkit
+# star_resonance_library
 
-Star Resonance Game Toolkit.
+星痕共鸣的一个资料库
 
-## Getting Started
+## 功能
 
-This project is a starting point for a Flutter application.
+1. 专注收益计算器
+2. 协会运货收益计算器
+3. 物品资料及合成链
 
-A few resources to get you started if this is your first Flutter project:
+## 安装方式
 
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+去release下载最新版的压缩包，解压运行exe即可

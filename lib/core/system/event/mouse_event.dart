@@ -1,4 +1,4 @@
-import 'package:star_resonance_toolkit/core/enum/mouse_action.dart';
+import 'package:star_resonance_library/core/enum/mouse_action.dart';
 
 class MouseEvent{
   int endX;

@@ -1,8 +1,8 @@
 import 'dart:typed_data';
 import 'package:opencv_core/opencv.dart' as cv;
 import 'package:image/image.dart' as img;
-import 'package:star_resonance_toolkit/core/module/option_module.dart';
-import 'package:star_resonance_toolkit/core/util/assets_util.dart';
+import 'package:star_resonance_library/core/module/option_module.dart';
+import 'package:star_resonance_library/core/util/assets_util.dart';
 
 
 

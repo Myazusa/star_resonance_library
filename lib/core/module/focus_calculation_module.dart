@@ -1,10 +1,14 @@
 import 'dart:typed_data';
 
-import 'package:star_resonance_toolkit/core/model/item_entity.dart';
-import 'package:star_resonance_toolkit/core/module/common/item_data_module.dart';
+import 'package:star_resonance_library/core/model/focus_consumption_item.dart';
+import 'package:star_resonance_library/core/model/item_entity.dart';
+import 'package:star_resonance_library/core/module/common/item_data_module.dart';
 
 class FocusCalculationModule{
   static FocusCalculationModule? _instance;
+
+  List<String> craftingItems = [];
+
   factory FocusCalculationModule() {
     return _instance ??= FocusCalculationModule._internal();
   }
@@ -39,10 +43,22 @@ class FocusCalculationModule{
   }
 
   // todo: 记得计算总耗费专注值
-  /// 返回键值对的<物品ID，物品craftingTable对象>
-  Map<String,Map<String,int>>? getItemSyntheticChain(ItemEntity itemEntity){
+  double? getTotalFocusConsumption(){
+    if(craftingItems.isEmpty){
+      return null;
+    }
+    double totalFocusConsumption = 0;
+
+
+    return totalFocusConsumption;
+  }
+
+  /// 返回的是物品ID的列表，该方法用于获取显示合成链的物品合成表，不涉及计算专注消耗
+  List<String> getItemSyntheticChain(String itemID){
     // 创建每一层的List，里面装有每一个要合成的东西的craftingTable
-    Map<String,Map<String,int>> layerMap = {};
+    if(craftingItems.isNotEmpty){
+      craftingItems = [];
+    }
 
     // 添加最高层的合成表，也就是当前物品的合成表
     //layerMap.putIfAbsent(itemEntity.item.itemID,()=>itemEntity.crafting!.craftingTable);
@@ -50,20 +66,20 @@ class FocusCalculationModule{
     // 内联的递归id函数
     void dfs(String currentItemId) {
       // 不允许递归已经递归过的id，否则会循环依赖
-      if (layerMap[currentItemId] != null ) return;
+      if (craftingItems.contains(currentItemId)) return;
 
       // 检查当前的物品id是否存在并且有craftingTable，没有就返回，有就记录并继续看子物品
-      final craftingTable = _getItemCraftingTable(currentItemId);
-      if(craftingTable == null){
+      final itemEntity = _getItemIfHasCraftingTable(currentItemId);
+      if(itemEntity == null){
         return;
       }
-      layerMap.putIfAbsent(currentItemId, ()=>craftingTable);
+      craftingItems.add(currentItemId);
 
       // 因为存在了crafting对象，所以必定有craftingTable，遍历它获取子物品id
       for(final entity in itemEntity.crafting!.craftingTable.entries){
         // 这个id存在并且有craftingTable就递归，不存在就跳过
-        final craftingTable = _getItemCraftingTable(entity.key);
-        if(craftingTable == null){
+        final i = _getItemIfHasCraftingTable(entity.key);
+        if(i == null){
           continue;
         }
         dfs(entity.key);
@@ -71,19 +87,19 @@ class FocusCalculationModule{
     }
 
     // 开始递归，传入要递归的物品的id
-    dfs(itemEntity.item.itemID);
+    dfs(itemID);
 
-    return layerMap;
+    return craftingItems;
   }
 
-  Map<String, int>? _getItemCraftingTable(String itemID){
+  ItemEntity? _getItemIfHasCraftingTable(String itemID){
     final itemDetail = getItemDetail(itemID);
     if(itemDetail == null){
       return null;
     }
 
     if(itemDetail.crafting != null){
-      return itemDetail.crafting!.craftingTable;
+      return itemDetail;
     }
 
     return null;

@@ -1,7 +1,7 @@
 import 'dart:async';
 
-import 'package:star_resonance_toolkit/core/system/event/tick_event.dart';
-import 'package:star_resonance_toolkit/core/system/event_bus.dart';
+import 'package:star_resonance_library/core/system/event/tick_event.dart';
+import 'package:star_resonance_library/core/system/event_bus.dart';
 
 class Ticker{
   Timer? _timer;

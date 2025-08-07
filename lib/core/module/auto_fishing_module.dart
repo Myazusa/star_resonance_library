@@ -1,6 +1,6 @@
 
-import 'package:star_resonance_toolkit/core/module/common/screen_capture_module.dart';
-import 'package:star_resonance_toolkit/core/module/option_module.dart';
+import 'package:star_resonance_library/core/module/common/screen_capture_module.dart';
+import 'package:star_resonance_library/core/module/option_module.dart';
 
 
 class AutoFishingModule {

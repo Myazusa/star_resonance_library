@@ -42,4 +42,8 @@ const _$ItemCategoryEnumMap = {
   ItemCategory.botany: 'botany',
   ItemCategory.technology: 'technology',
   ItemCategory.alchemy: 'alchemy',
+  ItemCategory.carpentry: 'carpentry',
+  ItemCategory.forging: 'forging',
+  ItemCategory.cottonocracy: 'cottonocracy',
+  ItemCategory.crystallography: 'crystallography',
 };

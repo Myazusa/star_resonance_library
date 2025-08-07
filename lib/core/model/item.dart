@@ -1,7 +1,7 @@
 import 'package:json_annotation/json_annotation.dart';
-import 'package:star_resonance_toolkit/core/enum/item_category.dart';
-import 'package:star_resonance_toolkit/core/model/crafting.dart';
-import 'package:star_resonance_toolkit/core/model/raw_material.dart';
+import 'package:star_resonance_library/core/enum/item_category.dart';
+import 'package:star_resonance_library/core/model/crafting.dart';
+import 'package:star_resonance_library/core/model/raw_material.dart';
 
 part 'item.g.dart';
 

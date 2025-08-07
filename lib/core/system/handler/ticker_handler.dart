@@ -1,10 +1,10 @@
 import 'dart:developer';
 
-import 'package:star_resonance_toolkit/core/module/common/screen_capture_module.dart';
-import 'package:star_resonance_toolkit/core/module/option_module.dart';
-import 'package:star_resonance_toolkit/core/system/event/capture_event.dart';
-import 'package:star_resonance_toolkit/core/system/event/tick_event.dart';
-import 'package:star_resonance_toolkit/core/system/event_bus.dart';
+import 'package:star_resonance_library/core/module/common/screen_capture_module.dart';
+import 'package:star_resonance_library/core/module/option_module.dart';
+import 'package:star_resonance_library/core/system/event/capture_event.dart';
+import 'package:star_resonance_library/core/system/event/tick_event.dart';
+import 'package:star_resonance_library/core/system/event_bus.dart';
 
 
 class TickerHandler{

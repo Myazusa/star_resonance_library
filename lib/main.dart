@@ -5,8 +5,8 @@ import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:go_router/go_router.dart';
 import 'package:bitsdojo_window/bitsdojo_window.dart';
 
-import 'package:star_resonance_toolkit/ui/router/router.dart';
-import 'package:star_resonance_toolkit/ui/state/dashboard_state.dart';
+import 'package:star_resonance_library/ui/router/router.dart';
+import 'package:star_resonance_library/ui/state/dashboard_state.dart';
 
 /// 程序入口，同时也属于ui类
 void main() {

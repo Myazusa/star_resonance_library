@@ -1,6 +1,6 @@
-import 'package:star_resonance_toolkit/core/enum/mouse_action.dart';
-import 'package:star_resonance_toolkit/core/module/common/simulation_module.dart';
-import 'package:star_resonance_toolkit/core/system/event/mouse_event.dart';
+import 'package:star_resonance_library/core/enum/mouse_action.dart';
+import 'package:star_resonance_library/core/module/common/simulation_module.dart';
+import 'package:star_resonance_library/core/system/event/mouse_event.dart';
 
 class SimulationHandler{
   static Future<void> handleMouseMove(MouseEvent e) async {

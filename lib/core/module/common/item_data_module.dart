@@ -2,10 +2,10 @@ import 'dart:convert';
 import 'dart:developer';
 
 import 'package:flutter/services.dart';
-import 'package:star_resonance_toolkit/core/enum/item_tag.dart';
-import 'package:star_resonance_toolkit/core/model/item.dart';
-import 'package:star_resonance_toolkit/core/model/item_entity.dart';
-import 'package:star_resonance_toolkit/core/util/assets_util.dart';
+import 'package:star_resonance_library/core/enum/item_tag.dart';
+import 'package:star_resonance_library/core/model/item.dart';
+import 'package:star_resonance_library/core/model/item_entity.dart';
+import 'package:star_resonance_library/core/util/assets_util.dart';
 
 class ItemDataModule{
   static ItemDataModule? _instance;
