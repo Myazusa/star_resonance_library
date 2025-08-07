@@ -199,6 +199,27 @@
         }
     },
     {
+        "itemID": "item_guohuazhengwanzi_1",
+        "itemName": "裹花蒸丸子·等级1",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_guohuazhengwanzi_1.png",
+        "itemLevel": 1,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 1200,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_xianrou" : 2,
+                "item_qingyingbishui": 1,
+                "item_shiyan": 1
+            },
+            "resultProbability": 0.5,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_guohuazhengwanzi_2",
         "itemName": "裹花蒸丸子·等级2",
         "itemCategory": "gastronomy",
@@ -267,7 +288,7 @@
         "itemName": "菇菇阿斯特锅·等级1",
         "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_guguasiteguo_1.png",
-        "itemLevel": 2,
+        "itemLevel": 1,
         "isNoFocusConsumeItem": false,
         "perItemAssociationFreightValue": 2200,
         "rawMaterial": null,
@@ -280,6 +301,28 @@
                 "item_jiuweifen": 1
             },
             "resultProbability": 0.8,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_guguasiteguo_2",
+        "itemName": "菇菇阿斯特锅·等级2",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_guguasiteguo_2.png",
+        "itemLevel": 2,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 3300,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_jingzhiyurou" : 2,
+                "item_yingguangxun": 2,
+                "item_qingyingbishui": 2,
+                "item_jiuweifen": 1
+            },
+            "resultProbability": 0.2,
             "resultMinValue": 1,
             "resultMaxValue": 1
         }
@@ -351,7 +394,7 @@
         "itemIconPath": "assets/images/item/item_xingcuichijingyuanshi_2.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
-        "perItemAssociationFreightValue": 0,
+        "perItemAssociationFreightValue": 220,
         "rawMaterial": {
             "focusValue": 20,
             "perItemCollectingMinValue": 7,
@@ -366,7 +409,7 @@
         "itemIconPath": "assets/images/item/item_xingcuicuijingyuanshi_2.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
-        "perItemAssociationFreightValue": 0,
+        "perItemAssociationFreightValue": 220,
         "rawMaterial": {
             "focusValue": 20,
             "perItemCollectingMinValue": 7,
@@ -381,7 +424,7 @@
         "itemIconPath": "assets/images/item/item_xingcuilanjingyuanshi_2.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
-        "perItemAssociationFreightValue": 0,
+        "perItemAssociationFreightValue": 220,
         "rawMaterial": {
             "focusValue": 20,
             "perItemCollectingMinValue": 7,
@@ -396,7 +439,7 @@
         "itemIconPath": "assets/images/item/item_xingcuiyaojingyuanshi_2.png",
         "itemLevel": 1,
         "isNoFocusConsumeItem": false,
-        "perItemAssociationFreightValue": 0,
+        "perItemAssociationFreightValue": 220,
         "rawMaterial": {
             "focusValue": 20,
             "perItemCollectingMinValue": 7,
@@ -1025,6 +1068,28 @@
         }
     },
     {
+        "itemID": "item_yuxianrongyan_2",
+        "itemName": "鱼鲜熔岩·等级2",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_yuxianrongyan_2.png",
+        "itemLevel": 2,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 3300,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_jingzhiyurou" : 2,
+                "item_jingzhixianrou": 2,
+                "item_qingyingbishui": 1,
+                "item_jiuweifen": 2
+            },
+            "resultProbability": 0.2,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_zhoushayuguoxiangungeng_1",
         "itemName": "绉纱鱼果鲜滚羹·等级1",
         "itemCategory": "gastronomy",
@@ -1040,6 +1105,27 @@
                 "item_wumuguo": 2,
                 "item_qingyingbishui": 2,
                 "item_fengmi": 1
+            },
+            "resultProbability": 0.8,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_gulujiang_1",
+        "itemName": "菇噜酱·等级1",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_gulujiang_1.png",
+        "itemLevel": 1,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 2200,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_yingguangxun" : 4,
+                "item_huangyou": 1,
+                "item_fengmi": 3
             },
             "resultProbability": 0.8,
             "resultMinValue": 1,
@@ -1323,6 +1409,27 @@
         }
     },
     {
+        "itemID": "item_pusuasiteguo_2",
+        "itemName": "朴素阿斯特锅·等级2",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_pusuasiteguo_2.png",
+        "itemLevel": 2,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 3300,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_jingzhiyurou" : 4,
+                "item_qingyingbishui": 2,
+                "item_shiyan": 2
+            },
+            "resultProbability": 0.2,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_jingzhixianrou",
         "itemName": "精制鲜肉",
         "itemCategory": "gastronomy",
@@ -1551,6 +1658,17 @@
         "itemName": "大陆东方鲀",
         "itemCategory": "gastronomy",
         "itemIconPath": "assets/images/item/item_daludongfangtun.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": true,
+        "perItemAssociationFreightValue": 350,
+        "rawMaterial": null,
+        "crafting": null
+    },
+    {
+        "itemID": "item_leigenasianyongyu",
+        "itemName": "雷格那斯铵鳙鱼",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_leigenasianyongyu.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": true,
         "perItemAssociationFreightValue": 350,
