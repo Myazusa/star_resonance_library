@@ -1,4 +1,4 @@
-# star_resonance_library
+# 星痕图书馆
 
 星痕共鸣的一个资料库
 
