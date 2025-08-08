@@ -550,6 +550,26 @@
         }
     },
     {
+        "itemID": "item_kanghuohanpian_1",
+        "itemName": "抗火含片·等级1",
+        "itemCategory": "alchemy",
+        "itemIconPath": "assets/images/item/item_kanghuohanpian_1.png",
+        "itemLevel": 1,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 1600,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_huoyuansukeli_1" : 1,
+                "item_yaojicuiquchumei_kangxing": 1
+            },
+            "resultProbability": 0.5,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_kanghuohanpian_2",
         "itemName": "抗火含片·等级2",
         "itemCategory": "alchemy",
@@ -781,7 +801,27 @@
         "crafting": {
             "focusValue": 25,
             "craftingTable": {
-                "item_bingyuansukeli_1" : 1,
+                "item_bingyuansukeli_2" : 1,
+                "item_yaojicuiquchumei_zengqiang": 1
+            },
+            "resultProbability": 0.8,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_qingmantangjiang_2",
+        "itemName": "青蔓糖浆·等级2",
+        "itemCategory": "alchemy",
+        "itemIconPath": "assets/images/item/item_qingmantangjiang_2.png",
+        "itemLevel": 2,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 2700,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_senyuansukeli_2" : 1,
                 "item_yaojicuiquchumei_zengqiang": 1
             },
             "resultProbability": 0.8,
@@ -802,6 +842,26 @@
             "focusValue": 25,
             "craftingTable": {
                 "item_leiyuansukeli_1" : 1,
+                "item_yaojicuiquchumei_zengqiang": 1
+            },
+            "resultProbability": 0.5,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_liehuotangjiang_1",
+        "itemName": "烈火糖浆·等级1",
+        "itemCategory": "alchemy",
+        "itemIconPath": "assets/images/item/item_liehuotangjiang_1.png",
+        "itemLevel": 1,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 1600,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_huoyuansukeli_1" : 1,
                 "item_yaojicuiquchumei_zengqiang": 1
             },
             "resultProbability": 0.5,
@@ -1517,6 +1577,25 @@
         }
     },
     {
+        "itemID": "item_leiyuansukeli_2",
+        "itemName": "雷元素颗粒·等级2",
+        "itemCategory": "alchemy",
+        "itemIconPath": "assets/images/item/item_leiyuansukeli_2.png",
+        "itemLevel": 2,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 650,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 10,
+            "craftingTable": {
+                "item_leijingjingpian_2" : 3
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_tanhuoyupai_1",
         "itemName": "炭火鱼排·等级1",
         "itemCategory": "gastronomy",
@@ -1676,6 +1755,17 @@
         "crafting": null
     },
     {
+        "itemID": "item_sinuoxueyongyu",
+        "itemName": "斯诺雪鳙鱼",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_sinuoxueyongyu.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": true,
+        "perItemAssociationFreightValue": 350,
+        "rawMaterial": null,
+        "crafting": null
+    },
+    {
         "itemID": "item_guanguanyu_1",
         "itemName": "罐罐鱼·等级1",
         "itemCategory": "gastronomy",
@@ -1752,6 +1842,27 @@
                 "item_qingyingbishui": 1
             },
             "resultProbability": 0.5,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_naixiangwumu_2",
+        "itemName": "奶香乌姆·等级2",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_naixiangwumu_2.png",
+        "itemLevel": 2,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 3300,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_wumuguo" : 4,
+                "item_huangyou": 1,
+                "item_fengmi": 3
+            },
+            "resultProbability": 0.2,
             "resultMinValue": 1,
             "resultMaxValue": 1
         }
