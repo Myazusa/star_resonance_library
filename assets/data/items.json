@@ -1378,6 +1378,28 @@
         }
     },
     {
+        "itemID": "item_zhoushayuguoxiangungeng_2",
+        "itemName": "绉纱鱼果鲜滚羹·等级2",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_zhoushayuguoxiangungeng_2.png",
+        "itemLevel": 2,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 3300,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_jingzhiyurou" : 2,
+                "item_wumuguo": 2,
+                "item_qingyingbishui": 2,
+                "item_fengmi": 1
+            },
+            "resultProbability": 0.2,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_gulujiang_1",
         "itemName": "菇噜酱·等级1",
         "itemCategory": "gastronomy",
@@ -1875,6 +1897,17 @@
         "crafting": null
     },
     {
+        "itemID": "item_kongquehechangyou",
+        "itemName": "孔雀褐菖鲉",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_kongquehechangyou.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": true,
+        "perItemAssociationFreightValue": 500,
+        "rawMaterial": null,
+        "crafting": null
+    },
+    {
         "itemID": "item_xiangxunrudong_1",
         "itemName": "香蕈乳冻·等级1",
         "itemCategory": "gastronomy",
@@ -2008,6 +2041,27 @@
                 "item_jiuweifen": 2
             },
             "resultProbability": 0.8,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_jiuweiyanrou_2",
+        "itemName": "九味腌肉·等级2",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_jiuweiyanrou_2.png",
+        "itemLevel": 2,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 3300,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_jingzhixianrou" : 4,
+                "item_huangyou": 2,
+                "item_jiuweifen": 2
+            },
+            "resultProbability": 0.2,
             "resultMinValue": 1,
             "resultMaxValue": 1
         }
@@ -2164,6 +2218,132 @@
             "focusValue": 20,
             "craftingTable": {
                 "item_xingcuilanjingyuanshi" : 7
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_chijingbaoshi_wei3",
+        "itemName": "赤晶宝石·威3",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_chijingbaoshi_wei3.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 5000,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuichijingyuanshi_2" : 5,
+                "item_baoshila": 2,
+                "item_chijingbaoshi": 1
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_lanjingbaoshi_wei3",
+        "itemName": "蓝晶宝石·威3",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_lanjingbaoshi_wei3.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 5000,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuilanjingyuanshi_2" : 5,
+                "item_baoshila": 2,
+                "item_lanjingbaoshi": 1
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_cuijingbaoshi_ji3",
+        "itemName": "翠晶宝石·疾3",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_cuijingbaoshi_ji3.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 5000,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuicuijingyuanshi_2" : 5,
+                "item_baoshila": 2,
+                "item_cuijingbaoshi": 1
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_cuijingbaoshi_yuan3",
+        "itemName": "翠晶宝石·渊3",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_cuijingbaoshi_yuan3.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 5000,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuicuijingyuanshi_2" : 5,
+                "item_baoshila": 2,
+                "item_cuijingbaoshi": 1
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_yaojingbaoshi_pan3",
+        "itemName": "耀晶宝石·磐3",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_yaojingbaoshi_pan3.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 5000,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuiyaojingyuanshi_2" : 5,
+                "item_baoshila": 2,
+                "item_yaojingbaoshi": 1
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_yaojingbaoshi_ji3",
+        "itemName": "耀晶宝石·疾3",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_yaojingbaoshi_ji3.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 5000,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuiyaojingyuanshi_2" : 5,
+                "item_baoshila": 2,
+                "item_yaojingbaoshi": 1
             },
             "resultProbability": 1.0,
             "resultMinValue": 1,
