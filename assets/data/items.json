@@ -2246,10 +2246,52 @@
         }
     },
     {
+        "itemID": "item_chijingbaoshi_yuan3",
+        "itemName": "赤晶宝石·渊3",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_chijingbaoshi_yuan3.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 5000,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuichijingyuanshi_2" : 5,
+                "item_baoshila": 2,
+                "item_chijingbaoshi": 1
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_lanjingbaoshi_wei3",
         "itemName": "蓝晶宝石·威3",
         "itemCategory": "technology",
         "itemIconPath": "assets/images/item/item_lanjingbaoshi_wei3.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 5000,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuilanjingyuanshi_2" : 5,
+                "item_baoshila": 2,
+                "item_lanjingbaoshi": 1
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_lanjingbaoshi_ji3",
+        "itemName": "蓝晶宝石·疾3",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_lanjingbaoshi_ji3.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
         "perItemAssociationFreightValue": 5000,
@@ -2313,6 +2355,27 @@
         "itemName": "耀晶宝石·磐3",
         "itemCategory": "technology",
         "itemIconPath": "assets/images/item/item_yaojingbaoshi_pan3.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 5000,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuiyaojingyuanshi_2" : 5,
+                "item_baoshila": 2,
+                "item_yaojingbaoshi": 1
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
+        "itemID": "item_yaojingbaoshi_wei3",
+        "itemName": "耀晶宝石·威3",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_yaojingbaoshi_wei3.png",
         "itemLevel": 0,
         "isNoFocusConsumeItem": false,
         "perItemAssociationFreightValue": 5000,
