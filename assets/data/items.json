@@ -2167,6 +2167,26 @@
         }
     },
     {
+        "itemID": "item_yuyuxianguocha_1",
+        "itemName": "郁郁鲜果茶·等级1",
+        "itemCategory": "gastronomy",
+        "itemIconPath": "assets/images/item/item_yuyuxianguocha_1.png",
+        "itemLevel": 1,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 1200,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 25,
+            "craftingTable": {
+                "item_tiantianjiangguo" : 2,
+                "item_qingyingbishui": 1
+            },
+            "resultProbability": 0.5,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_naixiangwumu_1",
         "itemName": "奶香乌姆·等级1",
         "itemCategory": "gastronomy",
