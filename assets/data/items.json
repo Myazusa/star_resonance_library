@@ -2389,6 +2389,27 @@
         }
     },
     {
+        "itemID": "item_lanjingbaoshi_yuan3",
+        "itemName": "蓝晶宝石·渊3",
+        "itemCategory": "technology",
+        "itemIconPath": "assets/images/item/item_lanjingbaoshi_yuan3.png",
+        "itemLevel": 0,
+        "isNoFocusConsumeItem": false,
+        "perItemAssociationFreightValue": 5000,
+        "rawMaterial": null,
+        "crafting": {
+            "focusValue": 20,
+            "craftingTable": {
+                "item_xingcuilanjingyuanshi_2" : 5,
+                "item_baoshila": 2,
+                "item_lanjingbaoshi": 1
+            },
+            "resultProbability": 1.0,
+            "resultMinValue": 1,
+            "resultMaxValue": 1
+        }
+    },
+    {
         "itemID": "item_lanjingbaoshi_ji3",
         "itemName": "蓝晶宝石·疾3",
         "itemCategory": "technology",
