@@ -49,6 +49,7 @@ class FocusCalculationModule{
     }
     double totalFocusConsumption = 0;
 
+    
 
     return totalFocusConsumption;
   }

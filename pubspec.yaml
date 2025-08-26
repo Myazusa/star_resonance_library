@@ -48,9 +48,12 @@ flutter:
   uses-material-design: true
   assets:
     - assets/fonts/
-    - assets/images/
+    - assets/images/fishing/
+    - assets/images/cooking/
+    - assets/images/info/
+    - assets/images/item/
     - assets/icon/
-    - assets/data/
+    - assets/data/items.json
   fonts:
     - family: ResourceHanRoundedCN
       fonts:

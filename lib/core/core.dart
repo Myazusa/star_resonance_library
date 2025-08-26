@@ -20,8 +20,8 @@ class Init{
   static void initGreyQueryMatMap(){
     OpencvModule.initGreyQueryMatMap();
   }
-  static void initItemData(){
-    ItemDataModule.instance.initItemData();
+  static Future<void> initItemData() async {
+    await ItemDataModule.instance.initItemData();
   }
 }
 
