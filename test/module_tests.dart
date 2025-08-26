@@ -3,10 +3,10 @@ import 'package:star_resonance_library/core/core.dart';
 import 'package:star_resonance_library/core/module/focus_calculation_module.dart';
 
 void main() {
-  group('bbb', () {
+  group('a', () {
     TestWidgetsFlutterBinding.ensureInitialized();
-    test('aaa', () async {
-      // 测试获取带合成表的物品列表
+    test('aa', () async {
+      // 测试获取带合成表的物品列表专注值的计算
       await Init.initItemData();
 
       final itemID = 'item_yuxianrongyan_2';
@@ -16,25 +16,28 @@ void main() {
       final rootMap = rootItem?.crafting?.craftingTable;
 
       double totalFocusConsumption = 0;
-
+      print('物品计算公式为：');
       for(final id in precisList){
         final itemEntity = FocusCalculationModule.instance.getItemDetail(id);
-        final x = itemEntity?.crafting?.focusValue;
-        final t = itemEntity?.crafting?.resultMinValue;
-        if(t != null && x != null){
-          final f = x / t;
-          print('物品id为：${itemEntity?.item.itemName} 的每做一份消耗专注是：${f}');
+        final focusValue = itemEntity?.crafting?.focusValue;
+        final resultMinValue = itemEntity?.crafting?.resultMinValue;
+
+        if(resultMinValue != null && focusValue != null){
+          final focusValuePerResultMinValue = focusValue / resultMinValue;
+          //print('每做一份 ${itemEntity?.item.itemName} 所消耗专注是：${f}');
           if(id != itemID && rootMap != null){
            final shuliang = rootMap[id]!;
-           totalFocusConsumption += f * shuliang;
+           print('${itemEntity?.item.itemName}(${focusValue}) ÷ ${resultMinValue} × ${shuliang}');
+           totalFocusConsumption += focusValuePerResultMinValue * shuliang;
           }else{
-            totalFocusConsumption += f;
+            totalFocusConsumption += focusValuePerResultMinValue;
+            print('${itemEntity?.item.itemName}(${focusValue}) ÷ ${resultMinValue}');
           }
         }
         //print('物品id为：${itemEntity?.item.itemName} 的消耗专注是：${itemEntity?.crafting?.focusValue}');
       }
-      print('制作这个物品总消耗的专注是：${totalFocusConsumption.toString()}');
-      print(precisList);
+      print('制作1个这个物品总消耗的专注是：${totalFocusConsumption}');
+      //print(precisList);
     });
   });
 }
