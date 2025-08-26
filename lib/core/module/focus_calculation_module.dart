@@ -42,14 +42,33 @@ class FocusCalculationModule{
     return itemEntity;
   }
 
-  // todo: 记得计算总耗费专注值
-  double? getTotalFocusConsumption(){
-    if(craftingItems.isEmpty){
-      return null;
-    }
+  /// 返回计算总消耗专注。注意：里面会调用递归物品合成的方法
+  double? getTotalFocusConsumption(String itemID){
     double totalFocusConsumption = 0;
 
-    
+    final precisList = getItemSyntheticChain(itemID);
+
+    final rootItem = getItemDetail(itemID);
+    final rootMap = rootItem?.crafting?.craftingTable;
+
+    for(final id in precisList){
+      final itemEntity = getItemDetail(id);
+      final focusValue = itemEntity?.crafting?.focusValue;
+      final resultMinValue = itemEntity?.crafting?.resultMinValue;
+
+      if(resultMinValue != null && focusValue != null){
+        final focusValuePerResultMinValue = focusValue / resultMinValue;
+        if(id != itemID && rootMap != null){
+          final shuliang = rootMap[id]!;
+          // todo:还需要显示计算物品的表达式
+          //print('${itemEntity?.item.itemName}(${focusValue}) ÷ ${resultMinValue} × ${shuliang}');
+          totalFocusConsumption += focusValuePerResultMinValue * shuliang;
+        }else{
+          totalFocusConsumption += focusValuePerResultMinValue;
+          //print('${itemEntity?.item.itemName}(${focusValue}) ÷ ${resultMinValue}');
+        }
+      }
+    }
 
     return totalFocusConsumption;
   }

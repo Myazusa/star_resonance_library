@@ -24,7 +24,7 @@ void main() {
 
         if(resultMinValue != null && focusValue != null){
           final focusValuePerResultMinValue = focusValue / resultMinValue;
-          //print('每做一份 ${itemEntity?.item.itemName} 所消耗专注是：${f}');
+          //print('每做一份 ${itemEntity?.item.itemName} 所消耗专注是：${focusValuePerResultMinValue}');
           if(id != itemID && rootMap != null){
            final shuliang = rootMap[id]!;
            print('${itemEntity?.item.itemName}(${focusValue}) ÷ ${resultMinValue} × ${shuliang}');
@@ -38,6 +38,16 @@ void main() {
       }
       print('制作1个这个物品总消耗的专注是：${totalFocusConsumption}');
       //print(precisList);
+    });
+  });
+
+  group('b', (){
+    TestWidgetsFlutterBinding.ensureInitialized();
+    test('bb', () async{
+      await Init.initItemData();
+      final itemID = 'item_yuxianrongyan_2';
+      final s = FocusCalculationModule.instance.getTotalFocusConsumption(itemID);
+      print(s);
     });
   });
 }
