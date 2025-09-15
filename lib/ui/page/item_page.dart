@@ -1,9 +1,8 @@
 
-import 'dart:typed_data';
-
 import 'package:flutter/material.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 import 'package:star_resonance_library/ui/component/item_data.dart';
+import 'package:star_resonance_library/ui/component/item_detail_dialog.dart';
 import 'package:star_resonance_library/ui/state/item_data_state.dart';
 
 class ItemPage extends ConsumerWidget{
@@ -22,10 +21,15 @@ class ItemPage extends ConsumerWidget{
           ),
           itemCount: items.length,
           itemBuilder: (context, index) {
-            final (text, imageData) = items[index];
-            return ItemData(
-                text: text ?? "未知物品",
-                imageData: imageData ?? ByteData(0));
+            final item = items[index];
+            return GestureDetector(
+              onTap: (){
+                ItemDetailDialog.showFullScreenDialog(context,item.itemID);
+              },
+              child: ItemData(
+                  text: item.itemName,
+                  imageData: item.itemIcon),
+            );
           }
       ),
     );

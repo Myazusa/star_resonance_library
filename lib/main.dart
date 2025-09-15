@@ -164,7 +164,7 @@ class CustomNavigationRail extends ConsumerWidget  {
       (Icons.settings, "设置")
     ];
     final selectedIndexState = ref.watch(selectedIndexStateProvider);
-    return Container( // todo: 这里还要插入一个icon image
+    return Container( // todo: 这里还要插入一个icon image应用图标
       color: Theme.of(context).colorScheme.surface,
       width: double.infinity,
       alignment: Alignment.centerLeft,

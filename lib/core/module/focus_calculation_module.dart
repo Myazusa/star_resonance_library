@@ -1,6 +1,7 @@
 import 'dart:typed_data';
 
 import 'package:star_resonance_library/core/model/item_entity.dart';
+import 'package:star_resonance_library/core/model/item_overview.dart';
 import 'package:star_resonance_library/core/module/common/item_data_module.dart';
 
 class FocusCalculationModule{
@@ -19,18 +20,18 @@ class FocusCalculationModule{
   FocusCalculationModule._internal();
 
   /// 返回物品名，物品图标
-  (String?,ByteData?) getItemPrecis(String itemID){
+  ItemOverview getItemPrecis(String itemID){
     final itemEntity = ItemDataModule.instance.itemEntities[itemID];
 
-    return (itemEntity?.item.itemName,itemEntity?.itemIcon);
+    return ItemOverview(itemEntity!.item.itemID,itemEntity.item.itemName,itemEntity.itemIcon);
   }
 
   /// 返回列表的物品名，物品图标
-  List<(String?,ByteData?)> getItemPrecisList(){
-    List<(String?,ByteData?)> itemDetailList = [];
+  List<ItemOverview> getItemPrecisList(){
+    List<ItemOverview> itemDetailList = [];
 
     ItemDataModule.instance.itemEntities.forEach((key,value){
-      itemDetailList.add((value.item.itemName,value.itemIcon));
+      itemDetailList.add(ItemOverview(value.item.itemID,value.item.itemName,value.itemIcon));
     });
 
     return itemDetailList;
