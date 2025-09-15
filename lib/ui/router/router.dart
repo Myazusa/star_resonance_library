@@ -4,6 +4,7 @@ import 'package:go_router/go_router.dart';
 import 'package:star_resonance_library/main.dart';
 import 'package:star_resonance_library/ui/page/fishing_page.dart';
 import 'package:star_resonance_library/ui/page/info_page.dart';
+import 'package:star_resonance_library/ui/page/item_page.dart';
 import 'package:star_resonance_library/ui/page/option_page.dart';
 
 final router = GoRouter(
@@ -19,6 +20,10 @@ final router = GoRouter(
             GoRoute(
                 path: '/auto_fishing',
                 builder: (context, state) => FishingPage()
+            ),
+            GoRoute(
+                path: '/item',
+                builder: (context, state) => ItemPage()
             ),
             GoRoute(
                 path: '/option',

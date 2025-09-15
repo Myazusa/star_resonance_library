@@ -8,6 +8,8 @@ import 'package:bitsdojo_window/bitsdojo_window.dart';
 import 'package:star_resonance_library/ui/router/router.dart';
 import 'package:star_resonance_library/ui/state/dashboard_state.dart';
 
+import 'core/core.dart';
+
 /// 程序入口，同时也属于ui类
 void main() {
   runApp(
@@ -15,6 +17,7 @@ void main() {
       child: Main(),
     ),
   );
+  Init.initItemData();
   doWhenWindowReady(() {
     final initialSize = Size(800, 480);
     appWindow.minSize = initialSize;
@@ -135,6 +138,9 @@ class CustomNavigationRail extends ConsumerWidget  {
         context.replace('/auto_fishing');
         break;
       case 2:
+        context.replace('/item');
+        break;
+      case 3:
         context.replace('/option');
         break;
       case _:
@@ -154,6 +160,7 @@ class CustomNavigationRail extends ConsumerWidget  {
     final items = [
       (Icons.home, "主页"),
       (Icons.phishing, "自动钓鱼"),
+      (Icons.list_alt,"物品"),
       (Icons.settings, "设置")
     ];
     final selectedIndexState = ref.watch(selectedIndexStateProvider);

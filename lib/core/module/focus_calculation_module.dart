@@ -1,6 +1,5 @@
 import 'dart:typed_data';
 
-import 'package:star_resonance_library/core/model/focus_consumption_item.dart';
 import 'package:star_resonance_library/core/model/item_entity.dart';
 import 'package:star_resonance_library/core/module/common/item_data_module.dart';
 
