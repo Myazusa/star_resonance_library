@@ -1,8 +1,6 @@
 import 'dart:typed_data';
 
 import 'package:flutter/material.dart';
-import 'package:flutter/src/widgets/framework.dart';
-import 'package:flutter/widgets.dart';
 import 'package:flutter_riverpod/flutter_riverpod.dart';
 
 class ItemData extends ConsumerWidget{
@@ -21,11 +19,24 @@ class ItemData extends ConsumerWidget{
       width: 100,
       child: Column(
         children: [
-          Image.memory(
-            imageData.buffer.asUint8List(),
-            height: 60,
-            width: 60,
-            fit: BoxFit.cover,
+          Container(
+            decoration: BoxDecoration(
+              borderRadius: BorderRadius.circular(10),
+              border: Border.all(color: Colors.red, width: 4),
+            ),
+            clipBehavior: Clip.hardEdge,
+            child: Container(
+              decoration: BoxDecoration(
+                borderRadius: BorderRadius.circular(5)
+              ),
+              clipBehavior: Clip.hardEdge,
+              child: Image.memory(
+                imageData.buffer.asUint8List(),
+                height: 60,
+                width: 60,
+                fit: BoxFit.cover,
+              ),
+            ),
           ),
           const SizedBox(height: 4),
           Text(
