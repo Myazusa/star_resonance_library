@@ -43,7 +43,7 @@ class FocusCalculationModule{
   }
 
   /// 返回计算总消耗专注。注意：里面会调用递归物品合成的方法
-  double? getTotalFocusConsumption(String itemID){
+  double getTotalFocusConsumption(String itemID){
     double totalFocusConsumption = 0;
 
     final precisList = getItemSyntheticChain(itemID);

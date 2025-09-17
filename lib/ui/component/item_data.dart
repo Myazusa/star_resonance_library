@@ -21,20 +21,22 @@ class ItemData extends ConsumerWidget{
         children: [
           Container(
             decoration: BoxDecoration(
-              borderRadius: BorderRadius.circular(10),
-              border: Border.all(color: Colors.red, width: 4),
+              borderRadius: BorderRadius.circular(15),
+              border: Border.all(color: Color.fromRGBO(212, 145, 253, 1.0), width: 4),
             ),
-            clipBehavior: Clip.hardEdge,
+            clipBehavior: Clip.antiAlias,
             child: Container(
               decoration: BoxDecoration(
-                borderRadius: BorderRadius.circular(5)
+                borderRadius: BorderRadius.circular(10),
               ),
-              clipBehavior: Clip.hardEdge,
+              clipBehavior: Clip.antiAlias,
               child: Image.memory(
                 imageData.buffer.asUint8List(),
                 height: 60,
                 width: 60,
                 fit: BoxFit.cover,
+                color: Colors.white.withOpacity(0.9),
+                colorBlendMode: BlendMode.modulate
               ),
             ),
           ),
