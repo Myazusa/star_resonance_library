@@ -35,7 +35,7 @@ class ItemData extends ConsumerWidget{
                 height: 60,
                 width: 60,
                 fit: BoxFit.cover,
-                color: Colors.white.withOpacity(0.9),
+                color: Color.fromRGBO(255, 255, 255, 0.9),
                 colorBlendMode: BlendMode.modulate
               ),
             ),
@@ -45,6 +45,7 @@ class ItemData extends ConsumerWidget{
             text,
             textAlign: TextAlign.center,
             overflow: TextOverflow.ellipsis,
+            style: TextStyle(color: Theme.of(context).colorScheme.onPrimaryContainer,fontSize: 14,fontWeight: FontWeight.w500),
           )
         ],
       )

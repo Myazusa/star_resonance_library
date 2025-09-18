@@ -1,4 +1,3 @@
-import 'dart:typed_data';
 
 import 'package:star_resonance_library/core/model/item_entity.dart';
 import 'package:star_resonance_library/core/model/item_overview.dart';
@@ -20,10 +19,10 @@ class FocusCalculationModule{
   FocusCalculationModule._internal();
 
   /// 返回物品名，物品图标
-  ItemOverview getItemPrecis(String itemID){
+  ItemOverview? getItemPrecis(String itemID){
     final itemEntity = ItemDataModule.instance.itemEntities[itemID];
-
-    return ItemOverview(itemEntity!.item.itemID,itemEntity.item.itemName,itemEntity.itemIcon);
+    if(itemEntity != null) return ItemOverview(itemEntity.item.itemID,itemEntity.item.itemName,itemEntity.itemIcon);
+    return null;
   }
 
   /// 返回列表的物品名，物品图标
@@ -79,9 +78,6 @@ class FocusCalculationModule{
     if(craftingItems.isNotEmpty){
       craftingItems = [];
     }
-
-    // 添加最高层的合成表，也就是当前物品的合成表
-    //layerMap.putIfAbsent(itemEntity.item.itemID,()=>itemEntity.crafting!.craftingTable);
 
     // 内联的递归id函数
     void dfs(String currentItemId) {
