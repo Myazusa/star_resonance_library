@@ -58,13 +58,12 @@ class FocusCalculationModule{
       if(resultMinValue != null && focusValue != null){
         final focusValuePerResultMinValue = focusValue / resultMinValue;
         if(id != itemID && rootMap != null){
+          // 不是根物品就算数量
           final shuliang = rootMap[id]!;
-          // todo:还需要显示计算物品的表达式
-          //print('${itemEntity?.item.itemName}(${focusValue}) ÷ ${resultMinValue} × ${shuliang}');
           totalFocusConsumption += focusValuePerResultMinValue * shuliang;
         }else{
+          // 是根物品不需要算数量
           totalFocusConsumption += focusValuePerResultMinValue;
-          //print('${itemEntity?.item.itemName}(${focusValue}) ÷ ${resultMinValue}');
         }
       }
     }
@@ -119,5 +118,11 @@ class FocusCalculationModule{
     }
 
     return null;
+  }
+
+  /// 获取运货所需该物品的数量
+  int? getAssociationFreightItemQuantity(int perItemAssociationFreightValue,{double discount = 1}){
+    if(perItemAssociationFreightValue == 0) return null;
+    return (20000 / perItemAssociationFreightValue * discount).ceil();
   }
 }

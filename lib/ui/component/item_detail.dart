@@ -19,7 +19,9 @@ class ItemDetail extends ConsumerWidget {
       fontSize: 16,
       fontWeight: FontWeight.w600,
     );
+
     final itemEntity = FocusCalculationModule.instance.getItemDetail(itemID)!;
+
     final itemTotalFocus = FocusCalculationModule.instance
         .getTotalFocusConsumption(itemID);
     var itemCraftingList = [];
@@ -28,10 +30,20 @@ class ItemDetail extends ConsumerWidget {
         itemID,
       );
     }
+
     var itemFocusValue = 0;
     if (itemEntity.rawMaterial != null) {
       itemFocusValue = itemEntity.rawMaterial!.focusValue;
     }
+
+    double associationFreightFocusValue = 1;
+    if(itemTotalFocus != 0){
+      associationFreightFocusValue = itemTotalFocus;
+    }else if(itemEntity.rawMaterial != null){
+      associationFreightFocusValue = itemEntity.rawMaterial!.focusValue / itemEntity.rawMaterial!.perItemCollectingMinValue;
+    }
+    final associationFreightItemQuantity = FocusCalculationModule.instance.getAssociationFreightItemQuantity(itemEntity.item.perItemAssociationFreightValue);
+
     return Container(
       padding: EdgeInsets.only(left: 40, top: 30, right: 40, bottom: 30),
       decoration: BoxDecoration(
@@ -206,6 +218,34 @@ class ItemDetail extends ConsumerWidget {
                           ),
                         ],
                       ),
+                      if (associationFreightItemQuantity != null)
+                        const SizedBox(height: spaceValue),
+                      if (associationFreightItemQuantity != null)
+                        Row(
+                          children: [
+                            Text(
+                              "协会运货所需数量",
+                              style: TextStyle(
+                                color: Theme.of(
+                                  context,
+                                ).colorScheme.onPrimaryContainer,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(width: textSpaceValue),
+                            Text(
+                              associationFreightItemQuantity.toString(),
+                              style: TextStyle(
+                                color: Theme.of(
+                                  context,
+                                ).colorScheme.onPrimaryContainer,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
                       if (itemTotalFocus != 0)
                         const SizedBox(height: spaceValue),
                       if (itemTotalFocus != 0)
@@ -224,6 +264,62 @@ class ItemDetail extends ConsumerWidget {
                             SizedBox(width: textSpaceValue),
                             Text(
                               itemTotalFocus.toStringAsFixed(2),
+                              style: TextStyle(
+                                color: Theme.of(
+                                  context,
+                                ).colorScheme.onPrimaryContainer,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      if (itemTotalFocus != 0 && associationFreightItemQuantity != null)
+                        const SizedBox(height: spaceValue),
+                      if (itemTotalFocus != 0 && associationFreightItemQuantity != null)
+                        Row(
+                          children: [
+                            Text(
+                              "协会运货所需消耗专注",
+                              style: TextStyle(
+                                color: Theme.of(
+                                  context,
+                                ).colorScheme.onPrimaryContainer,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(width: textSpaceValue),
+                            Text(
+                              (associationFreightItemQuantity * itemTotalFocus).toStringAsFixed(2),
+                              style: TextStyle(
+                                color: Theme.of(
+                                  context,
+                                ).colorScheme.onPrimaryContainer,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                          ],
+                        ),
+                      if (associationFreightItemQuantity != null)
+                        const SizedBox(height: spaceValue),
+                      if (associationFreightItemQuantity != null)
+                        Row(
+                          children: [
+                            Text(
+                              "该协会运货金钱专注比为",
+                              style: TextStyle(
+                                color: Theme.of(
+                                  context,
+                                ).colorScheme.onPrimaryContainer,
+                                fontSize: 15,
+                                fontWeight: FontWeight.w500,
+                              ),
+                            ),
+                            SizedBox(width: textSpaceValue),
+                            Text(
+                              "${(18000 / (associationFreightItemQuantity * associationFreightFocusValue)).toStringAsFixed(2)} 金钱每专注",
                               style: TextStyle(
                                 color: Theme.of(
                                   context,

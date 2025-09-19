@@ -602,7 +602,7 @@
         "perItemAssociationFreightValue": 650,
         "rawMaterial": null,
         "crafting": {
-            "focusValue": 25,
+            "focusValue": 10,
             "craftingTable": {
                 "item_guangjingjingpian_2" : 3
             },
@@ -621,7 +621,7 @@
         "perItemAssociationFreightValue": 650,
         "rawMaterial": null,
         "crafting": {
-            "focusValue": 25,
+            "focusValue": 10,
             "craftingTable": {
                 "item_huojingjingpian_2" : 3
             },
@@ -640,7 +640,7 @@
         "perItemAssociationFreightValue": 650,
         "rawMaterial": null,
         "crafting": {
-            "focusValue": 25,
+            "focusValue": 10,
             "craftingTable": {
                 "item_anjingjingpian_2" : 3
             },
