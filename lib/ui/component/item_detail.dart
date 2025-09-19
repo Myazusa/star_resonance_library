@@ -308,7 +308,7 @@ class ItemDetail extends ConsumerWidget {
                         Row(
                           children: [
                             Text(
-                              "该协会运货金钱专注比为",
+                              "该协会运货金钱专注比",
                               style: TextStyle(
                                 color: Theme.of(
                                   context,
